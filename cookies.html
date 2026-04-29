@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>YardVerse | Cookies Policy – Small crumbs, big privacy respect</title>
+  <meta name="description" content="YardVerse Botanical Space Cookies Policy: learn how we use functional and analytics cookies to improve your blue & pink garden experience. Control your cookie settings with transparency.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, 'Inter', sans-serif;
+      background: linear-gradient(145deg, #eef5ff 0%, #fff0f7 100%);
+      color: #1a2b3e;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* Blue & Pink Theme (same harmony as privacy policy) */
+    :root {
+      --blue-deep: #0a2f6c;
+      --blue-soft: #2b5f8a;
+      --blue-pale: #cfe4ff;
+      --pink-bright: #ff6b9e;
+      --pink-soft: #ffb7d2;
+      --pink-lavender: #f8e0f0;
+      --white-light: #ffffff;
+      --shadow-sm: 0 8px 20px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.02);
+      --shadow-card: 0 20px 35px -12px rgba(0,0,0,0.1);
+    }
+
+    .navbar {
+      background: linear-gradient(135deg, var(--blue-deep), var(--blue-soft));
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo h1 {
+      color: white;
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff, var(--pink-soft));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: none;
+    }
+
+    .logo p {
+      color: var(--pink-soft);
+      font-size: 0.8rem;
+      margin-top: 4px;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--pink-bright);
+      color: var(--pink-soft);
+    }
+
+    /* Cookie-specific hero banner */
+    .cookie-hero {
+      background: linear-gradient(115deg, rgba(10,47,108,0.85), rgba(255,107,158,0.7)), url('https://images.unsplash.com/photo-1615485925600-9728b3a65b77?q=80&w=2070&auto=format');
+      background-size: cover;
+      background-position: center 45%;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    .cookie-hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .cookie-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(4px);
+      display: inline-block;
+      padding: 0.4rem 1.8rem;
+      border-radius: 50px;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* main cookie card */
+    .cookie-card {
+      background: white;
+      border-radius: 40px;
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(255,107,158,0.3);
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease;
+    }
+
+    .cookie-card h3 {
+      font-size: 1.9rem;
+      color: var(--blue-deep);
+      margin: 1.5rem 0 0.8rem 0;
+      border-left: 5px solid var(--pink-bright);
+      padding-left: 1rem;
+    }
+
+    .cookie-card h3:first-of-type {
+      margin-top: 0;
+    }
+
+    .cookie-card h4 {
+      font-size: 1.35rem;
+      color: var(--blue-soft);
+      margin: 1.2rem 0 0.5rem;
+    }
+
+    .cookie-card p {
+      margin-bottom: 1rem;
+      color: #2c3e4e;
+    }
+
+    .cookie-card ul, .cookie-card ol {
+      margin: 0.8rem 0 1rem 1.8rem;
+    }
+
+    .cookie-card li {
+      margin-bottom: 0.4rem;
+      color: #2c3e4e;
+    }
+
+    .badge-date-cookie {
+      background: var(--pink-lavender);
+      display: inline-block;
+      padding: 0.3rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      color: var(--blue-deep);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--pink-soft);
+    }
+
+    .highlight-cookie {
+      background: #fef2f7;
+      border-radius: 28px;
+      padding: 1.4rem;
+      margin: 1.5rem 0;
+      border-left: 6px solid var(--pink-bright);
+      font-style: normal;
+    }
+
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: #fefafc;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .cookie-table th, .cookie-table td {
+      border: 1px solid #ffe0ec;
+      padding: 12px 16px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .cookie-table th {
+      background: #e2f0ff;
+      color: var(--blue-deep);
+      font-weight: 700;
+    }
+
+    .cookie-table td {
+      background: white;
+    }
+
+    .consent-box {
+      background: linear-gradient(105deg, #eef5ff 0%, #fdeef4 100%);
+      border-radius: 30px;
+      padding: 1.8rem;
+      margin: 2rem 0 1rem;
+      text-align: center;
+      border: 1px solid var(--pink-soft);
+    }
+
+    .btn-cookie {
+      background: var(--pink-bright);
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 0.8rem 1.8rem;
+      border-radius: 60px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      margin: 0 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .btn-cookie:hover {
+      background: var(--blue-deep);
+      transform: scale(0.98);
+    }
+
+    .btn-secondary {
+      background: #cddfea;
+      color: var(--blue-deep);
+    }
+
+    .btn-secondary:hover {
+      background: var(--blue-soft);
+      color: white;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, var(--blue-pale), var(--pink-soft), var(--blue-pale));
+    }
+
+    footer {
+      background: linear-gradient(135deg, #051a34, var(--blue-deep));
+      color: #e0eaff;
+      padding: 2rem 2rem 1.5rem;
+      margin-top: 3rem;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+    }
+
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: var(--pink-soft);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.85rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--pink-bright);
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.4rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: 0.2s;
+      z-index: 99;
+    }
+
+    .back-to-top:hover {
+      background: var(--blue-deep);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 780px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .cookie-hero h2 {
+        font-size: 2rem;
+      }
+      .cookie-card {
+        padding: 1.5rem;
+      }
+      .cookie-card h3 {
+        font-size: 1.6rem;
+      }
+      .cookie-table th, .cookie-table td {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>🌿 YardVerse Botanical Space</h1>
+        <p>where blue serenity meets pink blooms</p>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="cookie-hero">
+    <div class="hero-inner">
+      <h2>🍪 Cookies with clarity & care</h2>
+      <p>Small digital crumbs that help us grow a better garden experience — never invasive, always transparent.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="cookie-card">
+      <div class="badge-date-cookie">📅 Last updated: April 24, 2026 | Applies worldwide</div>
+      <p><strong>YardVerse Botanical Space</strong> (“we”, “us”, “our”) uses cookies and similar tracking technologies on our website to improve functionality, analyze site traffic, and remember your preferences — just like a gardener remembers which plants thrive in which spot. This Cookies Policy explains what cookies are, how we use them, and how you can control them. By continuing to browse our blue & pink garden space, you consent to our use of cookies as described below unless you manage your settings.</p>
+
+      <div class="highlight-cookie">
+        🌸 <strong>Our Sweet Promise:</strong> We never use cookies for intrusive advertising, cross-site tracking, or selling your data. Our cookies are strictly functional or privacy-friendly analytics (like understanding which hydrangea guides are most loved). Your garden journey remains yours.
+      </div>
+
+      <h3>🌱 1. What Are Cookies?</h3>
+      <p>Cookies are tiny text files stored on your device (computer, tablet, or mobile) when you visit websites. They help us recognize your browser, remember your actions and preferences (like language or theme), and analyze how visitors interact with our content. We also use similar technologies such as localStorage and session storage for essential features.</p>
+
+      <h3>🍪 2. Types of Cookies We Use</h3>
+      <p>At YardVerse, we embrace minimalism – we only use what truly serves your botanical experience. Below is a clear breakdown:</p>
+
+      <table class="cookie-table">
+        <thead>
+          <tr><th>Cookie Category</th><th>Purpose</th><th>Examples & Duration</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Essential (Strictly Necessary)</strong></td><td>These are required for the website to function properly. They enable core features like page navigation, security, and access to secure areas. Without them, the Site cannot operate smoothly.</td><td>Session cookies (expire when you close browser); load balancer cookies; CSRF security tokens. Duration: session / few hours.</td></tr>
+          <tr><td><strong>Functional / Preference</strong></td><td>They remember your choices such as preferred color mode (blue/pink theme toggle), language selection, or dismissible notifications (e.g., cookie banner). Helps us tailor your experience.</td><td>"yardverse_theme_pref" (stores if you like soft blue or bloom pink); "cookie_consent_status". Duration: up to 12 months.</td></tr>
+          <tr><td><strong>Analytics & Performance</strong></td><td>We use privacy-focused analytics (e.g., self-hosted plausible or anonymized Google Analytics configured without sharing data). These cookies collect aggregated data about page visits, traffic sources, and popular garden guides.</td><td>_ga (anonymized IP), _gid and similar; retention: up to 14 months (GDPR compliant). No cross-site tracking.</td></tr>
+          <tr><td><strong>Third-Party (Limited)</strong></td><td>We may embed occasional content like YouTube plant tutorials (with enhanced privacy mode) or sign-up forms. These platforms may set their own cookies, but we restrict them to essential functionality only.</td><td>YouTube’s privacy-enhanced cookies (only when you play a video). Duration: varies, but we honour your consent preferences.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>⚙️ 3. How to Manage or Disable Cookies</h3>
+      <p>You are in control. Most web browsers allow you to manage cookie preferences through settings. You can block or delete cookies at any time, though blocking essential cookies may affect certain features (like newsletter signups or preference memory). Here’s how to manage cookies in popular browsers:</p>
+      <ul>
+        <li><strong>Google Chrome:</strong> Settings → Privacy and security → Cookies and other site data → customize blocking.</li>
+        <li><strong>Mozilla Firefox:</strong> Options → Privacy & Security → Enhanced Tracking Protection → Manage exceptions.</li>
+        <li><strong>Safari:</strong> Preferences → Privacy → Block all cookies.</li>
+        <li><strong>Microsoft Edge:</strong> Settings → Cookies and site permissions → Manage and delete cookies.</li>
+      </ul>
+      <p>Alternatively, you can use our interactive cookie preference tool below (if you change your mind, just reload the page and reconfigure).</p>
+
+      <div class="consent-box" id="cookie-consent-widget">
+        <h4 style="margin-top:0; color:var(--blue-deep);">🍪 Your Cookie Preferences</h4>
+        <p>We respect your choice. Select which categories you allow (essential cookies cannot be disabled because they keep YardVerse secure).</p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin: 1rem 0;">
+          <label style="display: flex; align-items: center; gap: 0.5rem; background: white; padding: 0.3rem 1rem; border-radius: 40px;">
+            <input type="checkbox" id="optFunctional" checked> 🧩 Functional/Preference
+          </label>
+          <label style="display: flex; align-items: center; gap: 0.5rem; background: white; padding: 0.3rem 1rem; border-radius: 40px;">
+            <input type="checkbox" id="optAnalytics" checked> 📊 Analytics (anonymous)
+          </label>
+        </div>
+        <div>
+          <button class="btn-cookie" id="saveCookiePrefs">💾 Save preferences</button>
+          <button class="btn-cookie btn-secondary" id="acceptAllCookies">✅ Accept all (recommended)</button>
+          <button class="btn-cookie btn-secondary" id="rejectNonEssential">❌ Reject non-essential</button>
+        </div>
+        <p style="font-size: 0.8rem; margin-top: 1rem;">Essential cookies always active. Preferences stored for 12 months. You can change anytime.</p>
+        <div id="prefFeedback" style="margin-top: 0.8rem; font-weight: 500;"></div>
+      </div>
+
+      <h3>📊 4. Analytics & Performance Transparency</h3>
+      <p>We use privacy-first analytics to understand which parts of our 78,000+ word garden ecosystem inspire you most — from blue hydrangea care to pink peony workshops. All analytics data is anonymized; IP addresses are truncated. We never share individual behavioral data with third parties. Our goal is to improve content quality, not to track individuals.</p>
+
+      <h3>🛡️ 5. Third-Party Links & Embedded Content</h3>
+      <p>Occasionally, we may include links to gardening tools, partner nurseries, or embedded videos (e.g., from Vimeo or YouTube). Those third-party services have their own cookie policies. We encourage you to review them. We are not responsible for third-party cookies, but we do our best to use privacy-enhanced modes (like YouTube’s no-cookie domain).</p>
+
+      <h3>🔐 6. GDPR, ePrivacy & Global Compliance</h3>
+      <p>YardVerse is committed to full compliance with the GDPR, UK GDPR, ePrivacy Directive, and CCPA. We request your consent before placing non-essential cookies via our cookie banner (shown on first visit). You can withdraw consent at any time using the widget above or by clearing your browser cookies. For EEA/UK users, we use a Consent Management Platform (lightweight) that honors “Do Not Track” signals where possible.</p>
+      <div class="highlight-cookie">
+        🌍 <strong>International users:</strong> Data from cookies is processed in the United States, but under strict data processing agreements that align with GDPR safeguards. No personal data leaves our control for advertising profiling.
+      </div>
+
+      <h3>📝 7. Changes to This Cookies Policy</h3>
+      <p>We may update this policy to reflect new cookie usage or legal requirements. Any changes will be posted on this page with an updated revision date. Material changes will be highlighted via a notice on our homepage or email to subscribers. We encourage you to review this policy periodically.</p>
+
+      <h3>📬 8. Contact Us – Cookie & Privacy Inquiries</h3>
+      <p>If you have any questions regarding our use of cookies, your privacy choices, or wish to exercise data rights, please reach out to our Data Protection Gardener (Privacy Team). We answer within 7 business days.</p>
+      <div class="highlight-cookie" style="margin-bottom: 0;">
+        📧 privacy@yardversebotanical.com <br>
+        📞 +1 (888) 433-9273 (ask for Cookie & Data team) <br>
+        📬 YardVerse Botanical Space – Privacy, 4420 Garden Vista Lane, Suite B, Austin, TX 78701, USA
+      </div>
+
+      <hr>
+
+      <div style="text-align: center; background: #eef2ff; border-radius: 32px; padding: 1.2rem; margin-top: 1rem;">
+        🌼 Every cookie crumb at YardVerse is served with intention — never excess. Thank you for trusting us to cultivate your unique garden journey with transparency & love.
+      </div>
+    </div>
+
+    <!-- extra small notice about consent record -->
+    <div style="background: var(--pink-lavender); border-radius: 32px; padding: 0.8rem 1.5rem; text-align: center; font-size: 0.9rem;">
+      🍃 By continuing to use YardVerse Botanical Space, you acknowledge our use of essential cookies and, if you accept optional ones, functional & analytics cookies. You can manage your preferences anytime via the widget above or your browser settings.
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌿 YardVerse Botanical Space</h4>
+        <p>Bringing blue tranquility and pink joy to global gardeners since 2019.</p>
+      </div>
+      <div class="footer-col">
+        <h4>📍 Visit Us</h4>
+        <p>🏡 4420 Garden Vista Lane, Suite B</p>
+        <p>🌆 Austin, Texas 78701, USA</p>
+        <p>📞 +1 (888) 433-9273 (YARD-VERSE)</p>
+        <p>✉️ hello@yardversebotanical.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>⏰ Hours</h4>
+        <p>Mon-Fri: 9am - 6pm (CT)</p>
+        <p>Sat: 10am - 4pm | Sun: Closed (Garden meditation online)</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 YardVerse Botanical Space — Cultivating blue & pink dreams. Your privacy, our priority. Cookies used responsibly.
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">⬆️</a>
+
+  <script>
+    (function() {
+      // Interactive cookie preference manager (demo/localStorage simulation)
+      const functionalCheck = document.getElementById('optFunctional');
+      const analyticsCheck = document.getElementById('optAnalytics');
+      const saveBtn = document.getElementById('saveCookiePrefs');
+      const acceptAll = document.getElementById('acceptAllCookies');
+      const rejectNonEss = document.getElementById('rejectNonEssential');
+      const feedbackDiv = document.getElementById('prefFeedback');
+
+      // Load saved preferences from localStorage (simulate real consent storage)
+      function loadPreferences() {
+        const savedPrefs = localStorage.getItem('yardverse_cookie_prefs');
+        if (savedPrefs) {
+          try {
+            const prefs = JSON.parse(savedPrefs);
+            if (typeof prefs.functional === 'boolean') functionalCheck.checked = prefs.functional;
+            if (typeof prefs.analytics === 'boolean') analyticsCheck.checked = prefs.analytics;
+            showFeedback('✅ Your cookie preferences loaded successfully.', '#2b5f8a');
+          } catch(e) { console.warn(e); }
+        } else {
+          // default: both true (non-essential accepted)
+          functionalCheck.checked = true;
+          analyticsCheck.checked = true;
+        }
+      }
+
+      function showFeedback(msg, color = '#0a2f6c') {
+        feedbackDiv.innerHTML = `<span style="color:${color};">🍪 ${msg}</span>`;
+        setTimeout(() => {
+          if (feedbackDiv.innerHTML.includes(msg)) feedbackDiv.innerHTML = '';
+        }, 3000);
+      }
+
+      function savePreferences() {
+        const prefs = {
+          functional: functionalCheck.checked,
+          analytics: analyticsCheck.checked,
+          timestamp: new Date().toISOString()
+        };
+        localStorage.setItem('yardverse_cookie_prefs', JSON.stringify(prefs));
+        // actual website would disable/enable analytics scripts accordingly (simulated)
+        showFeedback('Preferences saved! Functional & analytics cookies will respect your choice (simulated for demo).', '#ff6b9e');
+        console.log('[YardVerse] Cookie preferences updated:', prefs);
+        // In a real implementation, we would toggle analytics scripts or functional flags.
+        // For demonstration we simulate console log.
+      }
+
+      function acceptAllCookiesFunc() {
+        functionalCheck.checked = true;
+        analyticsCheck.checked = true;
+        savePreferences();
+        showFeedback('You accepted all cookies (essential + functional + analytics). Thank you!', '#0a6b3e');
+      }
+
+      function rejectNonEssentialFunc() {
+        functionalCheck.checked = false;
+        analyticsCheck.checked = false;
+        savePreferences();
+        showFeedback('Non-essential cookies rejected. Only essential cookies remain active. You can change anytime.', '#b13e3e');
+      }
+
+      saveBtn.addEventListener('click', savePreferences);
+      acceptAll.addEventListener('click', acceptAllCookiesFunc);
+      rejectNonEss.addEventListener('click', rejectNonEssentialFunc);
+      
+      // initial load
+      loadPreferences();
+
+      // Back to top smoothness
+      const backBtn = document.querySelector('.back-to-top');
+      if (backBtn) {
+        backBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // small console info
+      console.log("🍪 YardVerse Cookies Policy — transparency-first approach. Manage your preferences via interactive widget. Respect blooms and privacy.");
+    })();
+  </script>
+</body>
+</html>

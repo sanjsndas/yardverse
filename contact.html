@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>YardVerse | Contact Us – Blue & Pink Garden Support</title>
+  <meta name="description" content="Reach the YardVerse Botanical Space team. We’re here to help with gardening advice, partnership inquiries, and blooming inspiration. Get in touch today!">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, 'Inter', sans-serif;
+      background: linear-gradient(145deg, #eef5ff 0%, #fff0f7 100%);
+      color: #1a2b3e;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* Blue & Pink Theme Variables */
+    :root {
+      --blue-deep: #0a2f6c;
+      --blue-soft: #2b5f8a;
+      --blue-pale: #cfe4ff;
+      --pink-bright: #ff6b9e;
+      --pink-soft: #ffb7d2;
+      --pink-lavender: #f8e0f0;
+      --white-light: #ffffff;
+      --shadow-sm: 0 8px 20px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.02);
+      --shadow-hover: 0 20px 30px -12px rgba(0,0,0,0.15);
+    }
+
+    /* Header & Navbar (identical style as main site) */
+    .navbar {
+      background: linear-gradient(135deg, var(--blue-deep), var(--blue-soft));
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo h1 {
+      color: white;
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff, var(--pink-soft));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: none;
+    }
+
+    .logo p {
+      color: var(--pink-soft);
+      font-size: 0.8rem;
+      margin-top: 4px;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--pink-bright);
+      color: var(--pink-soft);
+    }
+
+    /* Page hero (smaller) */
+    .page-hero {
+      background: linear-gradient(115deg, rgba(10,47,108,0.85), rgba(255,107,158,0.7)), url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1973&auto=format');
+      background-size: cover;
+      background-position: center 40%;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    .page-hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .page-hero p {
+      font-size: 1.2rem;
+      max-width: 650px;
+      margin: 0 auto;
+      backdrop-filter: blur(3px);
+      background: rgba(0,0,0,0.2);
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 60px;
+    }
+
+    /* container */
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* contact grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      margin: 2rem 0 3rem;
+    }
+
+    /* contact info cards */
+    .info-card {
+      background: white;
+      border-radius: 32px;
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(255,107,158,0.25);
+      transition: all 0.3s;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .info-card h3 {
+      font-size: 1.9rem;
+      color: var(--blue-deep);
+      border-left: 5px solid var(--pink-bright);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-detail-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--pink-lavender);
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+
+    .contact-text strong {
+      color: var(--blue-soft);
+      display: block;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .social-circle {
+      background: var(--blue-pale);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: var(--blue-deep);
+      transition: 0.2s;
+    }
+
+    .social-circle:hover {
+      background: var(--pink-bright);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* form styling */
+    .form-card {
+      background: white;
+      border-radius: 32px;
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(10,47,108,0.15);
+    }
+
+    .form-card h3 {
+      font-size: 1.9rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-card p {
+      margin-bottom: 1.5rem;
+      color: #4a5a72;
+    }
+
+    .form-group {
+      margin-bottom: 1.3rem;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--blue-soft);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border-radius: 28px;
+      border: 1px solid #e2d4e8;
+      background: #fefcff;
+      font-family: inherit;
+      transition: 0.2s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--pink-bright);
+      box-shadow: 0 0 0 3px rgba(255,107,158,0.2);
+    }
+
+    .btn-submit {
+      background: var(--pink-bright);
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      border-radius: 40px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    .btn-submit:hover {
+      background: var(--blue-deep);
+      transform: scale(0.98);
+    }
+
+    /* FAQ Accordion */
+    .faq-section {
+      margin: 3rem 0;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 28px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      border: 1px solid #fee2f0;
+    }
+
+    .faq-question {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue-deep);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .faq-answer {
+      color: #2c3e50;
+    }
+
+    .map-container {
+      background: #e2eafc;
+      border-radius: 32px;
+      overflow: hidden;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .map-placeholder {
+      background: linear-gradient(145deg, #bdd4ff, #f6d5e4);
+      padding: 2rem;
+      text-align: center;
+      font-weight: 500;
+      color: var(--blue-deep);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #051a34, var(--blue-deep));
+      color: #e0eaff;
+      padding: 2rem 2rem 1.5rem;
+      margin-top: 3rem;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+    }
+
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: var(--pink-soft);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 780px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .page-hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>🌿 YardVerse Botanical Space</h1>
+        <p>where blue serenity meets pink blooms</p>
+      </div>
+      <div class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <h2>💌 Let’s Grow Together</h2>
+      <p>Reach out to our botanical team — we’re blooming with answers</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Contact main grid: info + form -->
+    <div class="contact-grid">
+      <!-- LEFT column: contact details, socials, hours -->
+      <div class="info-card">
+        <h3>🌼 Garden Concierge</h3>
+        <div class="contact-detail-item">
+          <span class="contact-icon">📍</span>
+          <div class="contact-text"><strong>YardVerse Headquarters</strong> 4420 Garden Vista Lane, Suite B<br>Austin, Texas 78701, USA</div>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-icon">📞</span>
+          <div class="contact-text"><strong>Blooming Hotline</strong> +1 (888) 433-9273 (YARD-VERSE)</div>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-icon">✉️</span>
+          <div class="contact-text"><strong>Botanical Inquiries</strong> hello@yardversebotanical.com</div>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-icon">⏰</span>
+          <div class="contact-text"><strong>Hours of Serenity</strong><br>Mon–Fri: 9am – 6pm (CT)<br>Sat: 10am – 4pm (Sun: Closed, but our online garden journal is always open)</div>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-icon">🌱</span>
+          <div class="contact-text"><strong>Support for Gardeners</strong> Live chat available weekdays, responses < 24h via email.</div>
+        </div>
+        <h4 style="margin: 1rem 0 0.5rem 0;">🌸 Social Gardens</h4>
+        <div class="social-links">
+          <a href="#" class="social-circle">📘</a>
+          <a href="#" class="social-circle">📸</a>
+          <a href="#" class="social-circle">🐦</a>
+          <a href="#" class="social-circle">🎥</a>
+          <a href="#" class="social-circle">📌</a>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.9rem;">Tag #YardVerseBloom for a chance to be featured in our Blue & Pink gallery ✨</p>
+      </div>
+
+      <!-- RIGHT column: contact form -->
+      <div class="form-card">
+        <h3>✨ Send us a petalgram</h3>
+        <p>Questions about blue hydrangeas, pink peonies, partnerships or garden design? Fill the form and our plant experts will get back within 1–2 days.</p>
+        <form id="contactForm" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full name *</label>
+            <input type="text" id="name" name="name" required placeholder="e.g., Lily Green">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required placeholder="hello@yardverse.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject">
+              <option value="gardening-advice">🌸 Gardening Advice / Plant Care</option>
+              <option value="partnership">🌿 Partnership & Collaboration</option>
+              <option value="workshop">🌱 Workshop & Events</option>
+              <option value="feedback">💬 Feedback & Stories</option>
+              <option value="other">✨ Other inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your garden dreams or blue/pink questions..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">🌺 Send Message</button>
+          <p style="font-size: 0.75rem; margin-top: 1rem; text-align: center;">By submitting, you agree to our privacy policy. We’ll never share your data.</p>
+        </form>
+        <div id="formFeedback" style="margin-top: 1rem; text-align: center; font-weight: 500;"></div>
+      </div>
+    </div>
+
+    <!-- FAQ Section (expands content + engagement) -->
+    <div class="faq-section">
+      <h2 class="section-title" style="font-size: 2rem; border-left: 7px solid var(--pink-bright); padding-left: 1rem;">💬 Frequently Asked Blooms</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">💙 How do I change my hydrangeas from blue to pink?</div>
+          <div class="faq-answer">For pink blooms, raise soil pH by adding garden lime (dolomitic) and use a low-aluminum, high-phosphorus fertilizer. Test pH — aim for 6.5–7.0. Transition takes one season.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">🌸 Do you offer virtual garden consultations?</div>
+          <div class="faq-answer">Yes! Our YardVerse Blue & Pink specialists provide online sessions. Contact us via form with ‘consultation request’ and we’ll schedule a Zoom walkthrough of your space.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">🌿 Can I visit the botanical space in Texas?</div>
+          <div class="faq-answer">Absolutely! Our Austin headquarters includes a demonstration blue-pink garden, open Mon–Fri by appointment. Use the contact form to reserve a free guided tour.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">📦 Do you ship live plants nationwide?</div>
+          <div class="faq-answer">We partner with certified nurseries. At this moment, we ship cuttings, seeds, and gardening merch. For full plants, see our online shop (coming 2025).</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Garden Map / find us visual -->
+    <div class="map-container">
+      <div class="map-placeholder">
+        🗺️ <strong>YardVerse Botanical Blue-Pink Garden Map</strong><br>
+        4420 Garden Vista Lane, Austin TX – Walk through our signature ‘Cerulean & Rose’ parterre. 
+        <span style="display: inline-block; background: rgba(10,47,108,0.1); padding: 0.4rem 1rem; border-radius: 30px; margin-top: 0.6rem;">📍 Interactive directions available upon request</span>
+      </div>
+    </div>
+
+    <!-- Additional note about 78k+ words ecosystem (matches brand philosophy) -->
+    <div style="background: #faf0f7; border-radius: 36px; padding: 1.5rem; text-align: center; border: 1px solid #ffbfd5; margin-bottom: 1rem;">
+      🌐 <strong>YardVerse Complete Botanical Knowledge</strong> — Our website features over 78,000+ original gardening words, from propagation guides to seasonal blue/pink palettes. Contact us to request specific articles or collaborate!
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌿 YardVerse Botanical Space</h4>
+        <p>Bringing blue tranquility and pink joy to global gardeners since 2019.</p>
+      </div>
+      <div class="footer-col">
+        <h4>📍 Visit Us</h4>
+        <p>🏡 4420 Garden Vista Lane, Suite B</p>
+        <p>🌆 Austin, Texas 78701, USA</p>
+        <p>📞 +1 (888) 433-9273 (YARD-VERSE)</p>
+        <p>✉️ hello@yardversebotanical.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>⏰ Hours</h4>
+        <p>Mon-Fri: 9am - 6pm (CT)</p>
+        <p>Sat: 10am - 4pm | Sun: Closed (Garden meditation online)</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 YardVerse Botanical Space — Cultivating blue & pink dreams. All written content is original and protected.
+    </div>
+  </footer>
+
+  <script>
+    // Simple form handling simulation with validation and success message
+    const form = document.getElementById('contactForm');
+    const feedbackDiv = document.getElementById('formFeedback');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      
+      if (!name || !email || !message) {
+        feedbackDiv.innerHTML = '<span style="color:#d9534f;">❌ Please fill in all required fields (name, email, message).</span>';
+        return;
+      }
+      if (!email.includes('@') || !email.includes('.')) {
+        feedbackDiv.innerHTML = '<span style="color:#d9534f;">📧 Please enter a valid email address.</span>';
+        return;
+      }
+      
+      // Simulate sending
+      feedbackDiv.innerHTML = '<span style="color:#2b5f8a;">🌸 Sending your message to YardVerse garden team...</span>';
+      
+      setTimeout(() => {
+        feedbackDiv.innerHTML = '<span style="color:#2b5f8a; background:#e3f0f5; padding:0.5rem 1rem; border-radius: 60px;">✅ Thank you, ' + name + '! Our botanical team will reply within 48h. Meanwhile, enjoy our blue-pink guides 🌿💗</span>';
+        form.reset();
+        setTimeout(() => {
+          feedbackDiv.innerHTML = '';
+        }, 7000);
+      }, 800);
+    });
+
+    // Console greeting to match brand & word count vibe
+    console.log("📞 YardVerse Contact page active — send your gardening love. Part of the 78k+ word ecosystem.");
+  </script>
+</body>
+</html>

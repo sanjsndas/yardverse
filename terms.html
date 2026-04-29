@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Terms of Privacy | YardVerse Botanical Space — Legal & Ethical Commitment</title>
+  <meta name="description" content="YardVerse Botanical Space terms of service, privacy principles, user guidelines, and data protection — rooted in transparency and respect for our global garden community.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, 'Inter', sans-serif;
+      background: linear-gradient(145deg, #eef5ff 0%, #fff0f7 100%);
+      color: #1a2b3e;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --blue-deep: #0a2f6c;
+      --blue-soft: #2b5f8a;
+      --blue-pale: #cfe4ff;
+      --pink-bright: #ff6b9e;
+      --pink-soft: #ffb7d2;
+      --pink-lavender: #f8e0f0;
+      --white-light: #ffffff;
+      --shadow-sm: 0 8px 20px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.02);
+      --shadow-hover: 0 20px 30px -12px rgba(0,0,0,0.15);
+    }
+
+    .navbar {
+      background: linear-gradient(135deg, var(--blue-deep), var(--blue-soft));
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo h1 {
+      color: white;
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff, var(--pink-soft));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: none;
+    }
+
+    .logo p {
+      color: var(--pink-soft);
+      font-size: 0.8rem;
+      margin-top: 4px;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: var(--pink-bright);
+      color: var(--pink-soft);
+    }
+
+    .legal-hero {
+      background: linear-gradient(115deg, rgba(10,47,108,0.85), rgba(255,107,158,0.8)), url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format');
+      background-size: cover;
+      background-position: center 30%;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    .legal-hero-content h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .legal-hero-content p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(4px);
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 60px;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+    }
+
+    .terms-card {
+      background: white;
+      border-radius: 2rem;
+      box-shadow: var(--shadow-sm);
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(255,107,158,0.2);
+      transition: all 0.2s;
+    }
+
+    .terms-card h2 {
+      color: var(--blue-deep);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--pink-bright);
+      padding-left: 1rem;
+    }
+
+    .terms-card h3 {
+      color: var(--blue-soft);
+      font-size: 1.3rem;
+      margin: 1.2rem 0 0.5rem 0;
+    }
+
+    .terms-card p, .terms-card li {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #1e2f3f;
+    }
+
+    .terms-card ul, .terms-card ol {
+      margin: 0.8rem 0 1rem 2rem;
+    }
+
+    .highlight-box {
+      background: linear-gradient(120deg, var(--blue-pale), var(--pink-lavender));
+      border-left: 6px solid var(--pink-bright);
+      padding: 1.2rem 1.8rem;
+      border-radius: 28px;
+      margin: 1.5rem 0;
+    }
+
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.8rem 0;
+      justify-content: space-between;
+    }
+
+    .badge {
+      background: #fef9fc;
+      flex: 1;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+      border: 1px solid var(--pink-soft);
+    }
+
+    .badge span {
+      font-size: 2rem;
+      display: block;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #051a34, var(--blue-deep));
+      color: #e0eaff;
+      padding: 2rem 2rem 1.5rem;
+      margin-top: 2.5rem;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+    }
+
+    .footer-inner {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: var(--pink-soft);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .footer-col p {
+      margin: 0.4rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+      .legal-hero-content h2 {
+        font-size: 2rem;
+      }
+      .terms-card {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>🌿 YardVerse Botanical Space</h1>
+        <p>where blue serenity meets pink blooms</p>
+      </div>
+      <div class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+      </div>
+    </div>
+  </header>
+
+  <section class="legal-hero">
+    <div class="legal-hero-content">
+      <h2>🌱 Terms of Privacy & Ethical Use</h2>
+      <p>Rooted in trust: our transparent commitment to your data, rights, and shared garden community.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- TERMS OF SERVICE SECTION (Combined with privacy-related terms as requested) -->
+    <div class="terms-card">
+      <h2>📜 1. Terms of Service — YardVerse Botanical Space</h2>
+      <p><strong>Last Updated:</strong> April 24, 2026</p>
+      <p>Welcome to YardVerse Botanical Space (“YardVerse,” “we,” “us,” or “our”). By accessing or using our website, including the Encyclopedia of Chromatic Horticulture, plant library, community forums, newsletters, and other digital services (collectively, the “Service”), you agree to comply with and be bound by these Terms of Service. If you do not agree, please refrain from using our Service.</p>
+      
+      <h3>🌼 1.1 Use of Content</h3>
+      <p>All written content, photography (unless credited to third parties), graphics, and plant profiles are original or properly licensed intellectual property of YardVerse. We grant you a personal, non-exclusive, non-transferable license to access and view the content for non-commercial, educational, and garden inspiration purposes. You may not reproduce, sell, or systematically extract our botanical guides without prior written consent. However, sharing single-page links or small excerpts for personal blogs with credit (“Source: YardVerse Botanical Space”) is encouraged and aligns with our community values.</p>
+      
+      <h3>🌸 1.2 Community Guidelines & User Responsibility</h3>
+      <p>Our comment sections, forums, and social media tags (#BluePinkHaven) are safe spaces. You agree not to post spam, hateful content, misinformation about horticulture, or violate any applicable laws. Respect the blue-pink harmony — kindness blooms here. We reserve the right to remove user-generated content or restrict access to any person violating these standards.</p>
+      
+      <h3>🌿 1.3 Disclaimer of Warranties</h3>
+      <p>Gardening advice provided by YardVerse is based on extensive research and real-world experience but is for general informational purposes only. Plant performance depends on local climate, soil, and care. We do not guarantee specific growth outcomes. To the fullest extent permitted by law, YardVerse disclaims all warranties, express or implied, including but not limited to merchantability or fitness for a particular purpose.</p>
+      
+      <div class="highlight-box">
+        💡 <strong>Our Promise:</strong> We never use AI-generated floral content without fact-checking. All plant recommendations are field-tested by our horticultural team. However, always cross-reference with local extension services.
+      </div>
+    </div>
+
+    <!-- PRIVACY PRINCIPLES & DATA PROTECTION (core part of terms of privacy) -->
+    <div class="terms-card">
+      <h2>🔒 2. Privacy Principles — Nurturing Your Digital Footprint</h2>
+      <p>Your privacy matters as much as a rare orchid. This section describes how we collect, use, and safeguard your information when you visit YardVerse.</p>
+      
+      <h3>📋 2.1 Information We Collect</h3>
+      <ul>
+        <li><strong>Voluntary Information:</strong> When you subscribe to our newsletter (“The Blue-Pink Petal Post”), join a virtual workshop, or contact us via forms, we may collect your name, email address, and optionally location to personalize gardening tips.</li>
+        <li><strong>Automatically Collected Data:</strong> Like most websites, we use cookies (see <a href="cookies.html" style="color: var(--pink-bright);">Cookies Policy</a>) to analyze trends, site traffic, and improve user experience. This includes IP address, browser type, referring pages, and pages visited. We never sell this data to third parties.</li>
+        <li><strong>Community Interactions:</strong> Public comments on our blog posts may display your chosen username. Do not share sensitive personal information in public areas.</li>
+      </ul>
+      
+      <h3>🌺 2.2 How We Use Your Information</h3>
+      <ul>
+        <li>To send periodic newsletters, garden tips, and updates about YardVerse events. You can unsubscribe anytime via the link in our emails.</li>
+        <li>To improve our content and understand which plants & design topics resonate most with our global audience.</li>
+        <li>To respond to inquiries, support requests, and enable workshop registrations.</li>
+        <li>To protect the security of the Service and prevent fraud or abuse.</li>
+      </ul>
+      
+      <h3>💙 2.3 Data Retention & Security</h3>
+      <p>We retain your personal data only as long as necessary to fulfill the purposes outlined in these terms, unless a longer retention period is required by law. We implement industry-standard security measures (SSL encryption, firewalls, and regular audits) to protect against unauthorized access. However, no method of transmission over the internet is 100% secure. For any data concerns, contact hello@yardversebotanical.com.</p>
+      
+      <div class="badge-grid">
+        <div class="badge"><span>✉️</span> No email selling</div>
+        <div class="badge"><span>🌍</span> GDPR / CCPA compliant</div>
+        <div class="badge"><span>🍪</span> Minimal anonymous cookies</div>
+        <div class="badge"><span>📚</span> 78k+ words — 0 trackers</div>
+      </div>
+    </div>
+
+    <!-- ADDITIONAL LEGAL & COOKIE INTEGRATION -->
+    <div class="terms-card">
+      <h2>🍪 3. Cookies Policy Summary & User Choices</h2>
+      <p>YardVerse uses first-party cookies to remember your preferences (e.g., dark mode not required, but session preferences) and gather anonymous traffic data via privacy-friendly analytics like Plausible or self-hosted Matomo. We do NOT use tracking cookies for advertising retargeting. By continuing to browse, you consent to our cookie usage described in our full <a href="cookies.html" style="color: var(--pink-bright);">Cookies Policy</a>. You may disable cookies in your browser settings, but some features might perform slower.</p>
+      <div class="highlight-box">
+        🍃 <strong>Your control:</strong> You can opt out of non-essential cookies at any time. We respect Do Not Track signals.
+      </div>
+    </div>
+
+    <!-- THIRD PARTY DISCLOSURES AND CHILDREN PRIVACY -->
+    <div class="terms-card">
+      <h2>🌎 4. Third-Party Links & Children's Privacy</h2>
+      <p>Our Service may contain links to external gardening retailers, botanical partners, or educational resources. We are not responsible for the privacy practices or content of those third-party sites. We encourage you to read their policies.</p>
+      <p><strong>Children’s Privacy:</strong> YardVerse is intended for general audiences and does not knowingly collect personal information from children under 13. If we discover we have inadvertently gathered such data, we will delete it promptly. Parents or guardians may contact us if they believe a child has provided information.</p>
+      
+      <h3>⚖️ 4.1 Governing Law & Dispute Resolution</h3>
+      <p>These Terms shall be governed by the laws of the State of Texas, USA, without regard to conflict of law principles. Any dispute arising from these Terms or your use of YardVerse shall be resolved through binding arbitration in Austin, Texas, unless otherwise required by applicable consumer protection laws. Class action waivers apply.</p>
+    </div>
+
+    <!-- MODIFICATIONS & CONTACT -->
+    <div class="terms-card">
+      <h2>📝 5. Modifications & Your Acceptance</h2>
+      <p>We may update these Terms of Privacy from time to time to reflect changes in legal requirements or our practices. The “Last Updated” date at the top will indicate revisions. Your continued use of YardVerse after updates constitutes acceptance of the modified terms. For material changes, we will notify users via our newsletter or a banner on the website.</p>
+      <p><strong>Questions or concerns?</strong> Our Garden Ombudsperson is here to help:</p>
+      <ul>
+        <li>Email: legal@yardversebotanical.com</li>
+        <li>Mail: YardVerse Legal, 4420 Garden Vista Lane, Suite B, Austin, TX 78701, USA</li>
+        <li>Response time: within 5-7 business days.</li>
+      </ul>
+      <div class="highlight-box" style="margin-top: 1rem;">
+        🌸 <strong>Commitment to Transparency:</strong> YardVerse Botanical Space has never sold user data and will never do so. Your botanical journey is yours alone.
+      </div>
+    </div>
+
+    <!-- USER RIGHTS UNDER GDPR/CCPA (SUMMARY) -->
+    <div class="terms-card">
+      <h2>🛡️ 6. Your Privacy Rights (GDPR, CCPA, LGPD)</h2>
+      <p>If you reside in the European Economic Area, California, Brazil, or other regions with data protection laws, you have specific rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you.</li>
+        <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete data.</li>
+        <li><strong>Right to Erasure (“Right to be Forgotten”):</strong> Request deletion under certain conditions.</li>
+        <li><strong>Right to Restrict Processing:</strong> Limit how we use your data.</li>
+        <li><strong>Right to Data Portability:</strong> Receive your data in a structured format.</li>
+        <li><strong>Right to Object:</strong> Opt-out of direct marketing or processing based on legitimate interests.</li>
+      </ul>
+      <p>To exercise any of these rights, email privacy@yardversebotanical.com. We will respond within 30 days and never discriminate against you for exercising rights.</p>
+      <p><strong>California Residents (CCPA):</strong> You have the right to opt-out of the “sale” of personal information. As we do not sell data, no action needed. However, you may request details of collected categories.</p>
+    </div>
+
+    <!-- ACKNOWLEDGEMENT & FULL TRANSPARENCY SECTION -->
+    <div class="terms-card">
+      <h2>🤝 7. Acceptable Use & Intellectual Property Respect</h2>
+      <p>YardVerse’s original content, including the “Blue-Pink Chromatic Encyclopedia,” infographics, and plant selector tools, is protected by copyright and trademark laws. You may <strong>not</strong> scrape our content for commercial purposes or republish entire guides without express permission. However, we welcome educational fair use: teachers, students, and non-profits may quote up to 200 words per article with proper attribution.</p>
+      <p><strong>Digital Millennium Copyright Act (DMCA):</strong> If you believe any material on YardVerse infringes your copyright, please provide a notice to our designated agent at dmca@yardversebotanical.com, including identification of the work and your contact details.</p>
+      <div class="highlight-box">
+        🌟 <strong>The YardVerse Pledge:</strong> Our 78,000-word botanical library is the result of years of hands-on horticulture. We guard this labor of love as we respect the original work of others.
+      </div>
+    </div>
+
+    <!-- Final note – combining "Terms of Privacy" page purpose -->
+    <div style="background: #eef3ff; border-radius: 2rem; padding: 1.8rem; text-align: center; border: 2px solid var(--pink-soft); margin-top: 1rem;">
+      <p style="font-size: 1.2rem; font-weight: 500;">🌿 <strong>One Garden, One Promise</strong> 🌸<br>
+      YardVerse Botanical Space stands for ethical gardening and ethical data practices. These Terms of Privacy are not just legal text — they are our commitment to cultivating a safe, transparent, and inspiring environment for all who seek the blue-pink harmony.</p>
+      <p style="margin-top: 12px;">📘 For more details, also refer to our <a href="privacy.html" style="color: var(--blue-deep); font-weight: bold;">Privacy Policy</a> and <a href="cookies.html" style="color: var(--blue-deep); font-weight: bold;">Cookies Policy</a> pages.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🌿 YardVerse Botanical Space</h4>
+        <p>Bringing blue tranquility and pink joy to global gardeners since 2019.</p>
+      </div>
+      <div class="footer-col">
+        <h4>📍 Visit Us</h4>
+        <p>🏡 4420 Garden Vista Lane, Suite B</p>
+        <p>🌆 Austin, Texas 78701, USA</p>
+        <p>📞 +1 (888) 433-9273 (YARD-VERSE)</p>
+        <p>✉️ hello@yardversebotanical.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>⏰ Hours</h4>
+        <p>Mon-Fri: 9am - 6pm (CT)</p>
+        <p>Sat: 10am - 4pm | Sun: Closed (Garden meditation online)</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 YardVerse Botanical Space — Cultivating blue & pink dreams. This Terms of Privacy page is part of our legal framework, ensuring transparency and trust.
+    </div>
+  </footer>
+
+  <script>
+    console.log("💙🌸 YardVerse Terms of Privacy — built with clarity, protecting every digital gardener’s data.");
+    // additional interactive consent reminder (optional, but no intrusive pop-up to preserve UX)
+    const dateUpdate = new Date().toLocaleDateString('en-US');
+    console.log(`Terms last reviewed: ${dateUpdate} - aligned with global privacy standards.`);
+  </script>
+</body>
+</html>
